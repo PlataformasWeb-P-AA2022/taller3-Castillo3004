@@ -1,0 +1,19 @@
+body{
+    margin: 25px; 
+}
+
+button{
+    align-items: center;
+    text-align: center;
+    padding: 13px;
+    background-color: #003f72;
+    color: rgb(216, 221, 213);
+    border: 0px;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: #F4AB14;
+    color: #18191F;
+}
+

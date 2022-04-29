@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Datepicker - Default functionality</title>
-  <link rel="stylesheet" href="estilos/estilos.css" type="text/css" />
+  <link rel="stylesheet" href="estilos/estilos.css" type="text/css">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -18,12 +18,12 @@
     <div class="columns">
         <div class="column uno">
             <div>
-                <form action="">
-                    <p>Nombre: <br><br> <input type="text"  id="nombre" autofocus placeholder="Nombre">  </p>
-                    <p>Apellido: <br><br> <input type="text"  id="apellido" placeholder="Apellido">  </p>
-                    <p>Fecha de nacimiento: <br><br><input type="text" id="datepicker" ></p>
-                    <button type="submit">Generar Mensaje</button>
-                </form>
+               
+                <p>Nombre: <br><br> <input type="text"  id="nombre" autofocus placeholder="Nombre">  </p>
+                <p>Apellido: <br><br> <input type="text"  id="apellido" placeholder="Apellido">  </p>
+                <p>Fecha de nacimiento: <br><br><input type="text" id="datepicker" ></p>
+                <button type="submit">Generar Mensaje</button>
+                
             </div>
 
         </div>
@@ -39,22 +39,23 @@
     } );
   
 </script>
+
+</body>
 <script>
     $(document).ready(function(){
         $("button").click(function(){
             var nombre = $('#nombre').val();
             var apellido = $('#apellido').val();
             var fecha = $('#datepicker').val();
-        
-            $("salida").append("<h3>Datos Ingresados: </h3> <br>"+nombre+"<br>"+apellido+"<br>"+fecha);
+            $("#salida").append("<h3>Datos Ingresados: </h3> <br>"+nombre+"<br>"+apellido+"<br>"+fecha);
             console.log(nombre);
             console.log(apellido);
             console.log(fecha);
-        })
-    })
+        });
+    });
     
 </script>
 
  
-</body>
+
 </html>
